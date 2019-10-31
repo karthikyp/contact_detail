@@ -1,0 +1,56 @@
+[{
+        "firstname": "Karthik",
+        "lastname": "YP",
+        "username": "karthikyp7",
+        "phone": "8660228681 ",
+        "city": "Bengaluru",
+        "state": "karnataka",
+        "country": "India",
+        "image": "url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80')"
+    },
+    {
+        "firstname": "Pavan",
+        "lastname": "Kumar",
+        "username": "pavankumar",
+        "phone": "7648222343",
+        "city": "Bengaluru",
+        "state": "karnataka",
+        "country": "India"
+    },
+    {
+        "firstname": "Subhendu",
+        "lastname": "Behda",
+        "username": "subhendubehera",
+        "phone": "8896541290",
+        "city": "xyz",
+        "state": "odisa",
+        "country": "India"
+    },
+    {
+        "firstname": "Rajesh",
+        "lastname": "Bomepathi",
+        "username": "rajesh123",
+        "phone": "9987965445",
+        "city": "xyz",
+        "state": "Andra Pradesh",
+        "country": "India"
+    },
+    {
+        "firstname": "Kumar",
+        "lastname": "Kantirav",
+        "username": "kumar664",
+        "phone": "7784335267",
+        "city": "xyz",
+        "state": "Andra Pradesh",
+        "country": "India"
+    },
+    {
+        "firstname": "Vibhav",
+        "lastname": "Vibs",
+        "username": "vibs18",
+        "phone": "8867453627",
+        "city": "xyz",
+        "state": "Gujarath",
+        "country": "India"
+    }
+]

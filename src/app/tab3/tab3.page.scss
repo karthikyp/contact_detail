@@ -1,1 +1,78 @@
+.hero-body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+}
 
+.hero.is-success {
+    background: #F2F6FA;
+    margin-top: -5%;
+}
+
+.hero .nav,
+.hero.is-success .nav {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+#avatar {
+    width: 170px;
+}
+
+.box {
+    margin-top: .5rem;
+    .avatar {
+        img {
+            margin-top: 5%;
+            position: relative;
+            left: 50%;
+            transform: translate(-50%);
+            padding-bottom: 20px;
+            padding: 5px;
+            background: #fff;
+            border-radius: 50%;
+            -webkit-box-shadow: 0 2px 3px rgba(10, 10, 10, .1), 0 0 0 1px rgba(10, 10, 10, .1);
+            box-shadow: 0 2px 3px rgba(10, 10, 10, .1), 0 0 0 1px rgba(10, 10, 10, .1);
+        }
+    }
+    .full-name {
+        text-align: center;
+        font-size: 22px;
+        font-weight: bold;
+        letter-spacing: 1.5px;
+    }
+}
+
+.table-details {
+    width: 100%;
+    height: auto;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    letter-spacing: 1px;
+    font-size: 17px;
+    tr {
+        border-bottom: 0.5px solid rgb(211, 207, 207);
+        word-break: break-all;
+    }
+    td {
+        width: 50%;
+        padding: 10px;
+        word-break: break-all;
+    }
+    td:first-child {
+        text-align: right;
+        font-weight: bold;
+    }
+}
+
+.btn-group {
+    width: 102%;
+    margin-top: 5%;
+    .btn {
+        width: 48%;
+        height: 7vh;
+        padding: 2%;
+    }
+    .btn-delete {}
+}

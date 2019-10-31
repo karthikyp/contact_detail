@@ -1,0 +1,67 @@
+<ion-header>
+    <ion-toolbar color="primary" class="tool">
+        <ion-icon class="bck-btn" name="arrow-round-back" (click)="contacts()"></ion-icon>
+        <ion-title class="title">
+
+            Add Contact
+        </ion-title>
+    </ion-toolbar>
+
+
+</ion-header>
+<ion-content>
+
+    <form #form="ngForm" (ngSubmit)='addContact()' novalidate>
+
+        <ion-grid>
+            <ion-row color="primary" justify-content-center>
+                <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+                    <div text-center>
+                        <h3>Create / Edit Contact!</h3>
+                    </div>
+                    <div padding>
+                        <ion-item>
+                            <ion-input name="firstname" #firstname="ngModel" type="text" [(ngModel)]="contactDetail.firstname" [class.is-invalid]="firstname.invalid" placeholder="First Name" ngModel required></ion-input>
+                        </ion-item>
+
+                        <ion-item>
+                            <ion-input name="lastname" #lastname="ngModel" type="text" [(ngModel)]="contactDetail.lastname" placeholder="Last Name" ngModel required></ion-input>
+                        </ion-item>
+                        <ion-item>
+                            <ion-input name="username" #username="ngModel" type="text" [(ngModel)]="contactDetail.username" placeholder="UserName" ngModel required></ion-input>
+                        </ion-item>
+                        <ion-item>
+                            <ion-input name="phone" #phone="ngModel" type="number" [(ngModel)]="contactDetail.phone" placeholder="Phone Number" ngModel required></ion-input>
+                        </ion-item>
+                        <ion-item>
+                            <ion-input name="city" #city="ngModel" type="text" [(ngModel)]="contactDetail.city" placeholder="City" ngModel required></ion-input>
+                        </ion-item>
+                        <ion-item>
+                            <ion-input name="state" #state="ngModel" type="text" [(ngModel)]="contactDetail.state" placeholder="State" ngModel required></ion-input>
+                        </ion-item>
+                        <ion-item>
+                            <ion-input name="country" #country="ngModel" type="text" [(ngModel)]="contactDetail.country" placeholder="country" ngModel required></ion-input>
+                        </ion-item>
+                    </div>
+                    <div padding>
+                        <ion-button id="add-update" size="large" type="submit" [disabled]="form.invalid" expand="block">Save</ion-button>
+                    </div>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </form>
+    <!-- <ion-button (click)='create()'>create</ion-button>
+    <ion-button (click)='write()'>write</ion-button>
+    <ion-button (click)='readFile()'>read</ion-button>
+    <ion-button size="expand" (click)='click()'>Click</ion-button> -->
+
+    <ion-list class="ite item-avatar main" *ngFor='let item of array' (click)='info(item)'>
+        <div class="image">
+            <img id="image" src="https://c8.alamy.com/comp/P9MYWR/man-avatar-profile-P9MYWR.jpg">
+            <p>Name: {{item.firstname}} {{item.lastname}}</p>
+            <p>Phone: {{item.phone}}</p>
+        </div>
+    </ion-list>
+
+
+</ion-content>

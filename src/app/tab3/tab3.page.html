@@ -1,9 +1,65 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Tab Three
-    </ion-title>
-  </ion-toolbar>
+    <ion-toolbar color="primary">
+        <ion-title>
+            Contact Detail
+        </ion-title>
+    </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content class="ion-cont" padding>
+    <section class="hero is-success is-fullheight">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <div class="column is-4 is-offset-4">
+
+
+                    <div class="box">
+                        <figure class="avatar">
+                            <img id="avatar" src="https://c8.alamy.com/comp/P9MYWR/man-avatar-profile-P9MYWR.jpg">
+                        </figure>
+                        <h3 class="full-name">{{fullname}}</h3>
+
+                        <br>
+                        <table class="table-details">
+                            <tr>
+                                <td>
+                                    <ion-icon name="person"></ion-icon> User Id: </td>
+                                <td><span class="usr-id">{{name}}</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <ion-icon name="call"></ion-icon>
+                                    Phone:</td>
+                                <td><span class="ph-num">{{phone}}</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <ion-icon name="locate"></ion-icon>
+                                    State:</td>
+                                <td><span class="state-name">{{state}}</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <ion-icon name="map"></ion-icon>
+                                    Country:</td>
+                                <td><span class="country-name">{{country}}</span></td>
+                            </tr>
+
+                        </table>
+                        <br>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="btn-group">
+        <ion-button class="btn btn-update" color="success" (click)="update()">Update</ion-button>
+        <ion-button class="btn btn-delete" color="danger" (click)="delete()">Delete</ion-button>
+    </div>
+
+
+
+</ion-content>

@@ -1,1 +1,50 @@
+ion-toolbar {
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 18%, rgba(4, 60, 71, 1) 31%, rgba(245, 246, 246, 1) 74%);
+}
 
+ion-header {
+    .search {
+        border-radius: 100px;
+    }
+    .add {
+        font-weight: bold;
+        position: relative;
+        width: 100%;
+        height: 10vh;
+        margin: 0 auto;
+    }
+}
+
+.item {
+    height: 85px;
+    padding: 0;
+}
+
+.main {
+    position: relative;
+    border: 1px solid rgb(165, 162, 162);
+    margin-bottom: 5px;
+    border-radius: 20px;
+    background: rgb(248, 248, 248);
+    img {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        left: 5%;
+        border-radius: 50%;
+        background: linear-gradient(90deg, rgba(2, 0, 36, 1) 18%, rgba(4, 60, 71, 1) 31%, rgba(245, 246, 246, 1) 74%);
+    }
+    p {
+        position: relative;
+        left: 30%;
+    }
+}
+
+.foot {
+    text-align: center;
+    font-size: 12px;
+    span {
+        color: red;
+        font-weight: bold;
+    }
+}

@@ -1,4 +1,22 @@
 .welcome-card img {
-  max-height: 35vh;
-  overflow: hidden;
+    max-height: 35vh;
+    overflow: hidden;
+}
+
+p {
+    text-align: center;
+    font-size: 12px;
+    span {
+        color: red;
+        font-weight: bold;
+    }
+}
+
+ion-content {
+    .image {
+        margin-top: 5px;
+        background-size: cover;
+        height: 350px;
+        background-image: url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80');
+    }
 }
